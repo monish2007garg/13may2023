@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #111;
+      }
+    </style>
+  </defs>
+  <g id="Mic" transform="translate(-703 -147)">
+    <rect id="Rectangle_70480" data-name="Rectangle 70480" class="cls-1" width="37" height="36" transform="translate(703 147)"/>
+    <g id="microphone" transform="translate(713.5 153)">
+      <path id="Path_142927" data-name="Path 142927" class="cls-2" d="M16.362,260.546a.73.73,0,0,0-1.459,0,6.472,6.472,0,1,1-12.944,0,.73.73,0,0,0-1.459,0,7.942,7.942,0,0,0,7.2,7.9v1.964H4.994a.73.73,0,0,0,0,1.459h6.875a.73.73,0,0,0,0-1.459H9.161v-1.964A7.941,7.941,0,0,0,16.362,260.546Zm0,0" transform="translate(0 -247.402)"/>
+      <path id="Path_142928" data-name="Path 142928" class="cls-2" d="M73.386,17.816a4.677,4.677,0,0,0,4.672-4.672V4.672a4.672,4.672,0,0,0-9.343,0v8.473A4.677,4.677,0,0,0,73.386,17.816ZM70.174,4.672a3.212,3.212,0,0,1,6.425,0v8.473a3.212,3.212,0,1,1-6.425,0Zm0,0" transform="translate(-64.955)"/>
+    </g>
+  </g>
+</svg>

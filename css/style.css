@@ -8,9 +8,22 @@ body{
 
 
 header{
-    height:81px;
+    min-height:81px;
     width:98.5%;
     margin:auto;
+}
+ul > li:hover{
+    background-color: #EBEBEB;
+    cursor: pointer;
+    border-radius:5px;
+}
+.m_menu > li:hover ul{
+    display: block;
+}
+.m_submenu{
+    width: 100px;
+    display: none;
+
 }
 main{
     height:2982px;
@@ -34,6 +47,12 @@ footer{
 }
 .m_footer4{
     height: 97px;
+}
+@media screen  and (max-width: 576px) {
+    .m_form_col{
+        height:50px;
+    }
+
 }
 
 @media (min-width: 1400px){.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
