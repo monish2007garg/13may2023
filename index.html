@@ -4,18 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>justdial</title>
-    <link rel="icon"  type="image/svg+xml" href="favicon.svg">
+    <title>Justdial - Local Search, Social, News, Videos, Shopping</title>
+    <link rel="shortcut icon" href="https://static.127777.com/tools/img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/style.css" rel="stylesheet" />
 </head>
 <body>
+      <!-- Modal -->
+      <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+              <div class="float-start">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              
+              
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                   <div class="col">
+                    <a class="btn text-body-tertiary fw-bold"href="#">sign IN</a>
+                   </div>
+                   <div class="col text-end">
+                    <a href="#">
+                      <img class="w-25 img-fluid"src="./img/profile.png"/>
+                    </a>
+                    
+                   </div>
+              </div>
+              <div class="mt-3">
+                <button type="button" class="btn btn-outline-secondary rounded-pill me-3">saved</button>
+                <button type="button" class="btn btn-outline-secondary rounded-pill me-3">favorities</button>
+                <button type="button" class="btn btn-outline-secondary rounded-pill me-3">interests</button>
+              </div>
+              <ul class="nav flex-column">
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link active text-body-tertiary" aria-current="page" href="#"><img class="img-fluid me-3" src="./img/a.svg"/>english</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/b.svg"/>customer sevice</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary" href="#"><img class="img-fluid me-3" src="./img/e.svg"/>list your Buisness</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/advertise.svg"/>advertise</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/f.svg"/>my transactions</a>
+                </li>
+                
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/g.svg"/>wishlist </a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/j.svg"/>manage qutes</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/k.svg"/>we are hiring</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/l.svg"/>setting</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/m.svg"/>privacy policy</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/n.svg"/>investor relations</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/o.svg"/>whats new</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/p.svg"/>others</a>
+                </li>
+                <li class="nav-item mt-3 mb-2">
+                    <a class="nav-link text-body-tertiary"><img class="img-fluid me-3" src="./img/q.svg"/>login</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+</div>
     <div class="container bg-white m_cont  m_tbdr">
-        <header class="fixed-top m_tbdr bg-white">
+        <header class=" fixed-top m_tbdr bg-white">
             <div class="row h-100">
                <div class="col-4 col-sm-2 m_form_col m_tbdr">
-                  <a href="#" class="d-block h-100">
+                  <a href="#" class="d-flex align-items-center d-block h-100">
                     <img class="img-fluid mt-2 " src="./img/justdial.svg" />
                   </a>
                </div>
@@ -29,12 +106,12 @@
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link btn btn-sm" href="#">
+                      <a class="nav-link btn btn-sm" href="#" >
                         <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/headernotifnicn.svg" />
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link btn btn-sm" href="#">
+                      <a class="nav-link btn btn-sm" href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">
                         <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/burgericnew.svg" />
                       </a>
                     </li>
@@ -55,7 +132,7 @@
                       <input type="search" placeholder="packers and movers" class="form-control shadow-none border border-0" id="exampleInputPassword1">
                     </div>
                     <div class="col-2  p-0 "><button type="submit" class="btn float-end">
-                      <img src="./img/mic.svg"/>
+                      <img class="img-fluid" src="./img/mic.svg"/>
                     </button>
                     </div>
                   </div>
@@ -65,7 +142,7 @@
                    <ul class=" nav mt-3 ms-3 m_menu">
                              <li class="nav-item">
                                   <a class="nav-link" aria-current="page" href="#">
-                                         <img src="./img/nav_language_icon.svg" /> English
+                                         <img class="img-fluid" src="./img/nav_language_icon.svg" /> English
                                               <img src="./img/down_arrow5.svg" />
                     </a>
                     <ul class=" nav-flex-column m_submenu bg-white list-unstyled border position-absolute">
@@ -124,98 +201,98 @@
         <main class="mt-5 m_mt-5 m_tbdr bg-white">
           <div class="m_m1 d-block d-sm-none">
             <div class="row m-0">
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/1.gif" />
                   B2B
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/2.svg" />
                   DOCTORS
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/3.svg" />
                   TRAVEL
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0  d-flex align-items-center">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0  d-flex align-items-center">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/4.svg" />
                   BEAUTY
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/5.svg" />
                   Interiors Designers
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/6.svg" />
                   Consultants
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/7.svg" />
                   RENT
                   and HIRE
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/8.svg" />
                   Wedding Requisites
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/9.svg" />
                   HOME SERVICES
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/10.svg" />
                   JOBS
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/11.svg" />
                   Repairs Services
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/12.gif" />
                   PG/Hostel
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/13.svg" />
                   Loans
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/14.svg" />
                   Real Estate
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/15.svg" />
                   Education
                 </a>
               </div>
-              <div class="col-3 d-flex align-items-center p-0 ">
+              <div class="col-3 m_tbdr  d-flex align-items-center p-0 ">
                 <a href="#" class="btn btn-sm text-center">
                   <img class="img-fluid" src="./img/16.svg" />
                   Show More
@@ -223,13 +300,122 @@
               </div>
             </div>
           </div>
-          <div class="m_m1">m2</div>
+          <div class="m_m1 mt-2">
+            <a href="#">
+              <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/newprot_w/free_listing_banner%20_14march.png"/>
+            </a>
+          </div>
+          <div class="m_m2 mt-2">
+            <div class="row m-0">
+                <div class="col ps-1 pe-1">
+                  <a href="#">
+                    <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/1/food.jpg?v=1"/>
+                  </a>
+                </div>
+                <div class="col ps-1 pe-1">
+                  <a href="#">
+                    <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/iphone/new/JioSim.jpg"/>
+                  </a>
+                </div>
+                <div class="col ps-1 pe-1">
+                  <a href="#">
+                    <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/flight/flight_hmpg_banner_27feb.png"/>
+                  </a>
+                </div>
+                <div class="col ps-1 pe-1">
+                  <a href="#">
+                    <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/1/paybills.jpg?v=1"/>
+                  </a>
+                </div>
+                <div class="m_m4 mt-2">
+                  <div class="row m-0">
+                      <div class="col ps-1 pe-1">
+                        <a href="#">
+                          <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/realestate/explore2x.gif"/>
+                        </a>
+                      </div>
+                      <div class="col ps-1 pe-1">
+                        <a href="#">
+                          <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/realestate/postright2xnew.gif"/>
+                        </a>
+                      </div>
+                      <div class="m_m5 mt-2">
+                        <div class="row">
+                          <div class="col">
+                            <a class="btn" href="#">HOME SERVICE</a>
+                          </div>
+                          <div class="col text-end">
+                            <img class="img-fluid"src="./img/arrow.svg"/>
+                          </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col ps-1 pe-1">
+                              <a href="#">
+                                <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/2/acrepairservice.jpg?v=1"/>
+                              </a>
+                            </div>
+                            <div class="col ps-1 pe-1">
+                              <a href="#">
+                                <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/2/pestcontrol.jpg?v=1"/>
+                              </a>
+                            </div>
+                            <div class="col ps-1 pe-1">
+                              <a href="#">
+                                <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/2/packersmovers.jpg?v=1"/>
+                              </a>
+                            </div>
+                            <div class="col ps-1 pe-1">
+                              <a href="#">
+                                <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/newhome/2/deepcleaning.jpg?v=1"/>
+                              </a>
+                            </div>
+                            <div class="m_m1 mt-2">
+                              <a href="#">
+                                <img class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icons/android/new/Online_consultation_hm.gif"/>
+                              </a>
+                            </div>
+                      
+                
+                
         </main>
         <footer class="m_tbdr bg-warning">
-            <div class="m_footer1 border-top border-bottom">f1</div>
-            <div class="m_footer2">f2</div>
-            <div class="m_footer3 border-top">f3</div>
-            <div class="m_footer4 border-top">f4</div>
+          <div class="d-block d-sm-none">
+            <div class="row text-centre">
+              <div class="col m_tbdr">
+                <a href="#" class="btn">
+                  <img class="img-fluid" src="./img/home.svg" />
+                </a>
+              </div>
+              <div class="col m_tbdr">
+                <a href="#" class="btn">
+                  <img class="img-fluid" src="./img/b2b.svg"/>
+                </a>
+              </div>
+              <div class="col m_tbdr">
+                <a href="#" class="btn">
+                  <img class="img-fluid" src="./img/jdpay.svg"/>
+                </a>
+              </div>
+              <div class="col m_tbdr">
+                <a href="#" class="btn">
+                  <img class="img-fluid" src="./img/news.png"/>
+                </a>
+              </div>
+              <div class="col m_tbdr">
+                <a href="#" class="btn">
+                  <img class="img-fluid" src="./img/bar.svg"/>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+              <div class="d-none d-sm-block">
+                  <div class="m_footer1 border-top border-bottom">f1</div>
+                  <div class="m_footer2">f2</div>
+                  <div class="m_footer3 border-top">f3</div>
+                  <div class="m_footer4 border-top">f4</div>
+              </div>
+            
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>

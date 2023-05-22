@@ -98,6 +98,12 @@ m_tnr{
         padding-top: 70px;;
 
     }
+    footer{
+        position: fixed;
+        bottom:0px;
+        left:0px;
+        width: 100%;
+    }
 
 }
 
