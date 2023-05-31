@@ -11,9 +11,10 @@ body{
 
 
 header{
-    min-height:81px;
-    width:98.5%;
-    margin:auto;
+    height:81px;
+}
+.m11{
+    height:275px;
 }
 ul > li:hover{
     background-color: #EBEBEB;
@@ -29,8 +30,7 @@ ul > li:hover{
 
 }
 main{
-    height:2982px;
-
+    
 }
 .mt-5.m_mt-5{
     margin-top: 5rem!important;
@@ -92,6 +92,7 @@ m_tnr{
        color:#333 !important;
        opacity:0.5 !important;
  }
+ 
 @media screen  and (max-width: 576px) {
     .m_form_col{
         height:50px;
@@ -103,11 +104,13 @@ m_tnr{
     }
     footer{
         position: fixed;
-        bottom:0px;
+        bottom:-2px;
         left:0px;
         width: 100%;
     }
-
+.m_tbdr{
+    border: 1px solid white;
+}
 }
 
 @media (min-width: 1400px){.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
