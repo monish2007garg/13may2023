@@ -11,13 +11,41 @@ body{
 
 
 header{
-    height:81px;
+    min-height:81px;
+    z-index:10000;
+}
+.m_ccp,.m_ccn{
+    visibility: hidden;
+}
+
+.m_mainslider:hover{
+    cursor: pointer;
+}
+.m_ccp{
+    left:20px;
+}
+.m_ccn{
+    right: 20px;
+}
+.m_mainslider .m_ccp,.m_mainslider .m_ccn{
+    background-color: rgba(0,0,0,0.8);
+    width:30px;
+    height: 30px;
+    border-radius:30px;
+}
+.m_mainslider:hover .m_ccp,.m_mainslider:hover .m_ccn{
+    visibility: visible;
+
+}
+.carousel-indicators button{
+    width:6px !important;
+    height: 6px !important;
 }
 .m11{
     height:275px;
 }
 .m22{
-   height:275px;
+   min-height:275px;
 }
 ul.m_m22_icon > li > a:hover{
     background-color: #fff;
