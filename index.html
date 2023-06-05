@@ -13,6 +13,9 @@
 </head>
 <body>
       <!-- Modal -->
+      <button class="btn m_scrollTotTop bg-light rounded-circle position-fixed bottom-0 end-0" style="bottom:36px !important;right:10px !important;">
+        <i class="fa-solid fa-chevron-up fa-lg"></i>
+      </button>
     <div class="modal hide" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
@@ -124,7 +127,7 @@
                   <img class="img-fluid mt-2 " src="./img/justdial.svg" />
                 </a>
               </div>
-              <div class="col-8 col-sm-3 m_form_col m_tbdr ">
+              <div class="col-8 col-sm-2 m_form_col m_tbdr d-block d-sm-none">
               <div class="d-block d-sm-none">   
 
                 <ul class="nav float-end m_tnr">  
@@ -146,65 +149,66 @@
                 </ul>
               </div>
             </div> 
-              <div class="col-12 col-sm-7 pt-2  ps-3 pe-3" >
-              
-              <form class=" d-sm-none d-md-none border mb-2 pt-0 pb-0 border-dark-subtle rounded p-1 ">
-                <div class="row">
-                  <div class="col-2  p-0 ">
-                    <button class="btn ms-1">
-                      <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    
-                  </div>
-                  <div class="col-8 p-0 ">
-                    <input type="search" placeholder="packers and movers" class="form-control shadow-none border border-0" id="exampleInputPassword1">
-                  </div>
-                  <div class="col-2  p-0 "><button type="submit" class="btn float-end">
-                    <img class="img-fluid" src="./img/mic.svg"/>
-                  </button>
+              <div class=" m_headerright clearfix col-12 col-sm-10 pt-2  ps-3 pe-3 " >
+                <div class="">
+                  <form class=" d-sm-none d-md-none border mb-2 pt-0 pb-0 border-dark-subtle rounded p-1 ">
+                    <div class="row">
+                      <div class="col-2  p-0 ">
+                        <button class="btn ms-1">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        
+                      </div>
+                      <div class="col-8 p-0 ">
+                        <input type="search" placeholder="packers and movers" class="form-control shadow-none border border-0" id="exampleInputPassword1">
+                      </div>
+                      <div class="col-2  p-0 "><button type="submit" class="btn float-end">
+                        <img class="img-fluid" src="./img/mic.svg"/>
+                      </button>
+                      </div>
+                    </div>
+                  
+                  </form>
+                  <div class="  d-none d-sm-block m_tbdr float-end" >
+                      <ul class=" nav mt-3 ms-3 m_menu">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#">
+                                            <img class="img-fluid" src="./img/nav_language_icon.svg" /> English
+                                                <img src="./img/down_arrow5.svg" />
+                      </a>
+                      <ul class=" nav-flex-column m_submenu bg-white list-unstyled border position-absolute">
+                          <li class="nav-item">
+                              <a href="#"class=" nav-link text-secondary-emphasis active">hindi</a>   
+                          </li>
+                          <li class="nav-item">
+                              <a href="#"class=" nav-link text-secondary-emphasis">english</a>   
+                          </li>
+                          <li class="nav-item">
+                              <a href="#"class=" nav-link text-secondary-emphasis">marathi</a>   
+                          </li>
+                      </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" pt-1 pb-1 nav-link text-secondary-emphasis" href="#">we are hiring</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" pt-1 pb-1 nav-link text-secondary-emphasis" href="#">investor relation</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"><img class="me-1"src="./img/nav_advertise_icon.svg"/>advertise</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"> <img src="./img/nav_listing_icon.svg"/>free listing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"><img src="./img/notify_icon.svg"/></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg"/> login/sign up</a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              
-              </form>
-              <div class="d-none d-sm-block m_tbdr" >
-                  <ul class=" nav mt-3 ms-3 m_menu">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">
-                                        <img class="img-fluid" src="./img/nav_language_icon.svg" /> English
-                                            <img src="./img/down_arrow5.svg" />
-                  </a>
-                  <ul class=" nav-flex-column m_submenu bg-white list-unstyled border position-absolute">
-                      <li class="nav-item">
-                          <a href="#"class=" nav-link text-secondary-emphasis active">hindi</a>   
-                      </li>
-                      <li class="nav-item">
-                          <a href="#"class=" nav-link text-secondary-emphasis">english</a>   
-                      </li>
-                      <li class="nav-item">
-                          <a href="#"class=" nav-link text-secondary-emphasis">marathi</a>   
-                      </li>
-                  </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" pt-1 pb-1 nav-link text-secondary-emphasis" href="#">we are hiring</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" pt-1 pb-1 nav-link text-secondary-emphasis" href="#">investor relation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"><img class="me-1"src="./img/nav_advertise_icon.svg"/>advertise</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"> <img src="./img/nav_listing_icon.svg"/>free listing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"><img src="./img/notify_icon.svg"/></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class=" pt-1 pb-1 nav-link text-secondary-emphasis"><img src="./img/jd_login_icon.svg"/> login/sign up</a>
-                  </li>
-                </ul>
-              </div>
               <ul class=" nav mt-3 ms-3 m_menu">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="#">
@@ -481,23 +485,26 @@
                       </div>
                     </div>
                   </div>
-                  <form>
-                    <div class="row">
+                  <form class="">
+                    <div class="row m-0 m_tbdr">
                        <div class="col-4  m_tbdr">
-                        <input type="text" class="form-control shadow-none border-dark pt-3 pb-3 " placeholder="Bhageshwar Mandir Road-neemuch H O, Neemuch" aria-label="First name">
+                        <div class="p-2 d-flex flex-row align-items-center border border-dark rounded-2 m_city_input">
+                          <i class="fa-solid fa-location-dot "></i> 
+                          <input type="text" class="form-control form-control-sm border-0  shadow-none m_city_input m_city_input  " placeholder="Bhageshwar Mandir Road-neemuch H O, Neemuch" aria-label="First name">
+                        </div>
                        </div>
                         <div class="col-8  m_tbdr">
-                          <div class="row m-0  border border-dark rounded-4">
-                            <div class="col-9">
+                          <div class="row m-0  border border-dark rounded-2">
+                            <div class="col-9 p-0">
                               <input type="text" class="form-control shadow-none border-0 pt-1 pb-1" placeholder="search for expert service" aria-label="Last name">
                             </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-row mb-3">
+                            <div class="col-3 p-0">
+                              <div class="d-flex flex-row ">
                                 <div class="p-2">
                                   <img src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/jd_mic_icon.svg"/>
                                 </div>
                                 <div class="p-2">
-                                  <button class="btn m_orange">
+                                  <button class="btn btn-sm m_orange">
                                     <img  class="img-fluid" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/jd_mic_icon.svg"/>
                                   </button>
                                 </div>
@@ -555,9 +562,24 @@
                         <img class="img-fluid position-absolute bottom-0 end-0" src="https://akam.cdn.jdmagicbox.com/images/icons/website/newhome/1/b2b.png?v=1.01?w=1920&q=75"/>
                       </a>
                      </div>
-                     <div class="col-3 p-0 m_tbdr h-100">2</div>
-                     <div class="col-3 p-0 m_tbdr h-100">3</div>
-                     <div class="col-3 p-0 m_tbdr h-100">4</div>
+                     <div class="col-3 p-0 m_tbdr h-100">
+                      <a  href="#" class="text-decoration:none; d-block m_xyz rounded-4 position-relative p-2 h-100" style="background:#A100CF">
+                        <span class=" d-block fw-bold fs-5 text-white">Repairs & Services</span>
+                        <img class="img-fluid position-absolute bottom-0 end-0" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/web_repair_image.png?v=1.0?w=1920&q=75"/>
+                      </a>
+                     </div>
+                     <div class="col-3 p-0 m_tbdr h-100">
+                      <a  href="#" class="text-decoration:none; d-block m_xyz rounded-4 position-relative p-2 h-100" style="background:#5A68C8">
+                        <span class=" d-block fw-bold fs-5 text-white">REAL ESTATE</span>
+                        <img class="img-fluid position-absolute bottom-0 end-0" src="https://akam.cdn.jdmagicbox.com/images/icons/website/newhome/1/realestate.png?v=1.0?w=1920&q=75"/>
+                      </a>
+                     </div>
+                     <div class="col-3 p-0 m_tbdr h-100">
+                      <a  href="#" class="text-decoration:none; d-block m_xyz rounded-4 position-relative p-2 h-100" style="background:#00AC7D">
+                        <span class=" d-block fw-bold fs-5 text-white">DOCTORS</span>
+                        <img class="img-fluid position-absolute bottom-0 end-0" src="https://akam.cdn.jdmagicbox.com/images/icontent/newwap/web2022/web_doctor_image.png?v=1.0?w=1920&q=75"/>
+                      </a>
+                     </div>
                 </div>
             </div>
           </div>
