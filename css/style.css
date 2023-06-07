@@ -1,8 +1,15 @@
 body{
+    font-family: 'Poppins', sans-serif;
     background-color:#e8e8e8;
 }
 
-
+.position-sticky{
+    z-index: 1000 !important;
+}
+#examplemodal2{
+    backdrop-filter: blur(15px);
+    z-index: 10000 !important;
+}
 .m_tbdr{
     border:2px dashed red;
 }
