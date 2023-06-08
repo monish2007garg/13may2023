@@ -11,8 +11,16 @@ body{
     z-index: 10000 !important;
 }
 .m_tbdr{
-    border:2px dashed red;
+    /*border:2px dashed red;*/
 }
+.m_b2b{
+    transform-origin: left center;
+    background-color: #0F7DD8 !important;
+    transform: scale(0.8,0.8);
+    transition: all linear .3s;
+    left: -50px !important;
+}
+
 
 
 
@@ -214,6 +222,7 @@ m_tnr{
 .m_xyz:hover > img{
     transform: scale3d(1.1,1.1,1);
 }
+
 .m_xyz  span{
     transform-origin: left  bottom;
      transform: scale3d(1,1,1);
@@ -221,6 +230,16 @@ m_tnr{
 }
 .m_xyz:hover  span{
     transform: scale3d(1.1,1.1,1);
+}
+.m_xyz:hover  .m_b2b{
+    left:0px !important;
+}
+.m_xyz:hover .m_b2b{
+    color:#0F7DD8 !important;
+    background-color: #Fff !important;
+}
+.m_xyz:hover i{
+    color: #085799;
 }
 
 @keyframes myanimation {
