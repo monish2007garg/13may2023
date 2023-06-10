@@ -10,8 +10,25 @@ body{
     backdrop-filter: blur(15px);
     z-index: 10000 !important;
 }
+.m_m55  img:hover{
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.03);
+}
+
+.m_m55  a:hover{
+    
+    background-color: transparent;
+}
+    
+
+
+.m_blue{
+    color: #0076D7;
+}
+.m_custom-smallest{
+    font-size:13px !important;
+}
 .m_tbdr{
-    /*border:2px dashed red;*/
+   border:2px dashed red;
 }
 .m_b2b{
     transform-origin: left center;
@@ -179,8 +196,17 @@ m_tnr{
        color:#333 !important;
        opacity:0.5 !important;
  }
- 
+@media screen  and (min-width: 577px) {
+       main{
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+       }
+}
 @media screen  and (max-width: 576px) {
+    main{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+       }
     .m_form_col{
         height:50px;
     }
